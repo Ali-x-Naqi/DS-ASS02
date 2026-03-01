@@ -282,7 +282,7 @@ def main():
 
         with st.expander("📋 Eigenvector Loadings", expanded=False):
             st.markdown("**Eigenvector Contributions to Principal Components**")
-            st.dataframe(loadings_df.style.format("{:.4f}").background_gradient(cmap="Blues", axis=0), use_container_width=True)
+            st.dataframe(loadings_df.style.format("{:.4f}"), use_container_width=True)
             
         with st.expander("💡 Analytical Rationale", expanded=False):
             st.markdown("""
