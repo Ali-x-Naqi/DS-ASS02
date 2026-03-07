@@ -1,0 +1,10 @@
+{
+    "total_sensors": 100,
+    "valid_readings": 876000,
+    "countries_monitored": 14,
+    "global_mean_pm25": 13.441403551754071,
+    "absolute_max_pm25": 1598.869465670611,
+    "structural_violation_rate": 6.3464611872146115,
+    "generated_at": "2026-03-01T07:51:48.764489",
+    "query_engine": "DuckDB"
+}

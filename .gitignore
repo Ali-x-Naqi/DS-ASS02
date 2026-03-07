@@ -1,0 +1,6 @@
+*.zip
+*.parquet
+__pycache__/
+*.pyc
+data/real_fetches/
+.ipynb_checkpoints/

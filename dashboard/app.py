@@ -2,6 +2,11 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import os
+import sys
+from pathlib import Path
+
+# Integrate modular Pipeline paths explicitly (Ass01 Standard)
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.task1_pca import execute_task1
 from src.task2_temporal import execute_task2
@@ -182,9 +187,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 def main():
-    data_path = os.path.join(os.path.dirname(__file__), "data", "simulated_env_2025.parquet")
-    if not os.path.exists(data_path):
-        st.error("Wait! The Data asset is currently generating. Please run `python main.py` to initiate the heavy batch ingestion.")
+    data_path = Path(__file__).parent.parent / "data" / "processed_real_2025.parquet"
+    if not data_path.exists():
+        st.error(f"ETL Database Not Found at {data_path}! Run `python src/data_ingestion.py` first.")
         return
 
     df = pd.read_parquet(data_path)
@@ -194,7 +199,7 @@ def main():
     <div class="dashboard-header">
         <div class="header-text">
             <h1><i class="fa-solid fa-satellite-dish"></i> Urban Intelligence Engine</h1>
-            <p>High-Density Analytics for Global Air Quality Telemetry</p>
+            <p>High-Density Analytics for Global Air Quality Telemetry (Year 2025)</p>
             <div class="authors-badge"><i class="fa-solid fa-code"></i> Ali Naqi (23F-3052) & Muhammad Aamir (23F-3073)</div>
         </div>
         <div class="kpi-container">
@@ -206,17 +211,17 @@ def main():
             <div class="kpi-card">
                 <div class="kpi-icon"><i class="fa-solid fa-database"></i></div>
                 <div class="kpi-value">{len(df):,}</div>
-                <div class="kpi-label">Data Points</div>
+                <div class="kpi-label">Hourly Points</div>
             </div>
             <div class="kpi-card">
                 <div class="kpi-icon"><i class="fa-solid fa-city"></i></div>
-                <div class="kpi-value">3</div>
-                <div class="kpi-label">Zone Clusters</div>
+                <div class="kpi-value">{df['zone'].nunique()}</div>
+                <div class="kpi-label">Zones</div>
             </div>
             <div class="kpi-card">
                 <div class="kpi-icon"><i class="fa-solid fa-globe"></i></div>
                 <div class="kpi-value">{df['country'].nunique()}</div>
-                <div class="kpi-label">Countries Monitored</div>
+                <div class="kpi-label">Global Regions</div>
             </div>
         </div>
     </div>
