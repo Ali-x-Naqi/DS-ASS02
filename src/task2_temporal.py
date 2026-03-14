@@ -76,4 +76,17 @@ def execute_task2(df):
     
     violation_rate = (df_clean['pm25'] > 35).mean() * 100
     
-    return fig, fig_line, violation_rate
+    # 4. Compute Dynamic Extremes for the Dashboard Text
+    worst_row = monthly_stats.loc[monthly_stats['violation_pct'].idxmax()]
+    best_row = monthly_stats.loc[monthly_stats['violation_pct'].idxmin()]
+    
+    volatility = monthly_stats.groupby('station_name')['violation_pct'].std().reset_index()
+    most_volatile = volatility.loc[volatility['violation_pct'].idxmax()]['station_name']
+    
+    extremes = {
+        "highest": f"{worst_row['station_name']} ({worst_row['violation_pct']:.1f}%)",
+        "lowest": f"{best_row['station_name']} ({best_row['violation_pct']:.1f}%)",
+        "volatile": most_volatile
+    }
+    
+    return fig, fig_line, violation_rate, extremes

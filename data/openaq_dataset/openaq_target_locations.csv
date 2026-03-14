@@ -1,0 +1,101 @@
+id,name,country,zone
+17,"R K Puram, Delhi - DPCC",IN,Residential
+25,Parque O'Higgins,CL,Residential
+26,Inpesca,CL,Residential
+27,Concón,CL,Residential
+31,Wekerom-Riemterdijk,NL,Residential
+33,Zaanstad-Hemkade,NL,Residential
+38,Cauquenes,CL,Residential
+39,Gobernación,CL,Residential
+41,Groningen-Europaweg,NL,Residential
+44,Heerlen-Jamboreepad,NL,Residential
+45,Puente Alto,CL,Residential
+47,Valparaiso,CL,Residential
+50,"Punjabi Bagh, Delhi - DPCC",IN,Residential
+51,Wieringerwerf-Medemblikkerweg,NL,Residential
+52,Rotterdam-Oost Sidelinge A13,NL,Residential
+54,Talagante,CL,Residential
+55,Utrecht-Kardinaal de Jongweg,NL,Residential
+58,Zegveld-Oude Meije,NL,Residential
+60,Haringey - Haringey Town Hall,GB,Residential
+61,Coya Población,CL,Residential
+63,Philippine-Stelleweg,NL,Residential
+65,Punteras,CL,Residential
+68,Cerro Merquín,CL,Residential
+69,Kingston College,CL,Residential
+71,Biest Houtakker-Biestsestraat,NL,Residential
+72,Curicó,CL,Residential
+73,Coyhaique II,CL,Residential
+76,De Zilk-Vogelaarsdreef,NL,Residential
+77,Hoek v. Holland-Berghaven,NL,Residential
+80,Amsterdam-Van Diemenstraat,NL,Residential
+82,Haarlem-Schipholweg,NL,Residential
+85,Hellendoorn-Luttenbergerweg,NL,Residential
+93,Nijmegen-Graafseweg,NL,Residential
+95,Amsterdam-Vondelpark,NL,Residential
+96,Wijk aan Zee-Burgemeester Rothestraat,NL,Residential
+97,IJmuiden-Kanaaldijk,NL,Residential
+98,Amsterdam-Westerpark,NL,Residential
+100,Badhoevedorp-Sloterweg,NL,Residential
+101,Amsterdam-Hoogtij,NL,Residential
+102,Amsterdam-Einsteinweg,NL,Residential
+135,Prabadang Rehabiltation Center,TH,Residential
+141,London Harlington - UKA00472,GB,Residential
+146,Southwark - A2 Old Kent Road,GB,Residential
+148,Camden - Bloomsbury,GB,Residential
+149,Ealing Horn Lane,GB,Residential
+150,London Haringey Priory Park South - UKA00568,GB,Residential
+151,Tower Hamlets - Mile End Road,GB,Residential
+152,Camden Kerbside,GB,Residential
+153,London Hillingdon - UKA00266,GB,Residential
+154,London Marylebone Road,GB,Residential
+155,London N. Kensington,GB,Residential
+157,Bexley - Slade Green Fidas,GB,Residential
+158,London Teddington Bushy Park,GB,Residential
+159,London Westminster,GB,Residential
+162,Houston Deer Park C3,US,Residential
+164,Houston North Loop C,US,Residential
+173,Houston Westhollow C,US,Residential
+186,Houston Aldine C8,US,Residential
+187,Houston Bayland Park,US,Residential
+188,Houston Croquet C409,US,Residential
+191,Seabrook Friendship,US,Residential
+192,Lang C408,US,Residential
+193,Houston Monroe C406,US,Residential
+195,Houston Park Place C,US,Residential
+199,Baytown Garth C1017,US,Residential
+210,Liceo Polivalente,CL,Residential
+212,ROLAND,US,Residential
+213,Twin Falls PM25,US,Residential
+215,Unionville,US,Residential
+216,South Bend-Shields D,US,Residential
+217,Lafayette-Greenbush,US,Residential
+218,Ogden Dunes,US,Residential
+219,Columbus - Rocky For,US,Residential
+220,Larwill,US,Residential
+221,Indpls-Washington Pa,US,Residential
+222,Terre Haute-Lafayett,US,Residential
+223,Gary-IITRI,US,Residential
+226,Elkhart-Prairie St.,US,Residential
+227,Kokomo - E. Vaile Av,US,Residential
+228,Fishers,US,Residential
+229,Caddo Valley,US,Residential
+230,Barstow,US,Residential
+231,Lucerne Valley,US,Residential
+232,Trona - Athol and Te,US,Residential
+233,Spokane Valley-E Bro,US,Residential
+234,Enterprise - US Fore,US,Residential
+235,"Anand Vihar, New Delhi - DPCC",IN,Residential
+239,Alamo Lake,US,Residential
+240,Waterbury,US,Residential
+242,Potawatomi,US,Residential
+244,Liberty,US,Residential
+255,Mark Twain SP,US,Residential
+257,Savannah,US,Residential
+259,Troost,US,Residential
+260,St. Joseph,US,Residential
+265,Botlek-Spoortunnel,NL,Residential
+267,Arendtsville,US,Residential
+268,Oxford,US,Residential
+270,Los Ángeles Oriente,CL,Residential
+271,Campiche,CL,Residential

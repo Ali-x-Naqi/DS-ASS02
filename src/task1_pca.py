@@ -89,5 +89,9 @@ def execute_task1(df):
     )
 
     loadings_df = pd.DataFrame(loadings[:, :2], index=[f.upper() for f in features], columns=['PC1', 'PC2'])
+    
+    # Dynamically compute the top 3 drivers of PC1 to avoid hardcoding in the dashboard text
+    top_3_pc1 = loadings_df['PC1'].abs().sort_values(ascending=False).head(3).index.tolist()
+    top_drivers_str = ", ".join(top_3_pc1)
 
-    return fig_pca, fig_scree, fig_biplot, fig_box, fig_corr, variance, loadings_df
+    return fig_pca, fig_scree, fig_biplot, fig_box, fig_corr, variance, loadings_df, top_drivers_str
